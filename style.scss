@@ -1,0 +1,283 @@
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: grid;
+  place-content: center;
+  color: #298EB2;
+}
+
+svg {
+  border: 1px solid #333;
+}
+
+
+
+
+@function random_range($min, $max) {
+  $rand: random();
+  $random_range: $min + floor($rand * (($max - $min) + 1));
+  @return $random_range;
+}
+
+
+
+.cls-1 {
+  transform: translateX(0);
+  $total: 26;
+
+  @for $i from 1 through $total {
+    $random-x: random(1000000) * 0.0001px;
+    $random-offset: random_range(16, 20) * 1%;
+    $fall-duration: random_range(1.5, 4) * 1s;
+    transform: translate(0, 0);
+
+    &:nth-child(#{$i}) {
+      animation: fall-#{$i} $fall-duration ease 1;
+      transform: translateX(0px);
+    }
+
+    @keyframes fall-#{$i} {
+      0% {
+        transform: translateX(0);
+      }
+
+      50% {
+        transform: translateX($random-offset);
+      }
+    }
+  }
+}
+
+.cls-2 {
+  $total: 41;
+
+  @for $i from 1 through $total {
+    $random-x: random(1000000) * 0.0001px;
+    $random-offset: random_range(16, 20) * 1%;
+    $fall-duration: (random_range(3, 6) * 1s);
+    transform: translate(0, 0);
+
+    &:nth-child(#{$i}) {
+      animation: fall-#{$i} $fall-duration 0.5s ease 1;
+      transform: translateX(0px);
+    }
+
+    @keyframes fall-#{$i} {
+      0% {
+        transform: translateX(0);
+      }
+
+      50% {
+        transform: translateX($random-offset);
+      }
+    }
+  }
+}
+
+.cls-3 {
+  $total: 46;
+
+  @for $i from 1 through $total {
+    $random-x: random(1000000) * 0.0001px;
+    $random-offset: random_range(16, 20) * 1%;
+    $fall-duration: (random_range(1.5, 4) * 0.5s);
+    transform: translate(0, 0);
+
+    &:nth-child(#{$i}) {
+      animation: fall-#{$i} $fall-duration 1s ease 1;
+      transform: translateX(0px);
+    }
+
+    @keyframes fall-#{$i} {
+      0% {
+        transform: translateX(0);
+      }
+
+      50% {
+        transform: translateX($random-offset);
+      }
+    }
+  }
+}
+
+.cls-4 {
+  $total: 23;
+
+  @for $i from 1 through $total {
+    $random-x: random(1000000) * 0.0001px;
+    $random-offset: random_range(16, 20) * 1%;
+    $fall-duration: (random_range(1.5, 4) * 0.5s);
+    transform: translate(0, 0);
+
+    &:nth-child(#{$i}) {
+      animation: fall-#{$i} $fall-duration 1.5s ease 1;
+      transform: translateX(0px);
+    }
+
+    @keyframes fall-#{$i} {
+      0% {
+        transform: translateX(0);
+      }
+
+      50% {
+        transform: translateX($random-offset);
+      }
+    }
+  }
+}
+
+.cls-5 {
+  $total: 47;
+
+  @for $i from 1 through $total {
+    $random-x: random(1000000) * 0.0001px;
+    $random-offset: random_range(16, 20) * 1%;
+    $fall-duration: (random_range(1.5, 4) * 0.5s);
+    transform: translate(0, 0);
+
+    &:nth-child(#{$i}) {
+      animation: fall-#{$i} $fall-duration 2s ease 1;
+      transform: translateX(0px);
+    }
+
+    @keyframes fall-#{$i} {
+      0% {
+        transform: translateX(0);
+      }
+
+      50% {
+        transform: translateX($random-offset);
+      }
+    }
+  }
+}
+
+.cls-6 {
+  $total: 44;
+
+  @for $i from 1 through $total {
+    $random-x: random(1000000) * 0.0001px;
+    $random-offset: random_range(16, 20) * 1%;
+    $fall-duration: (random_range(1.5, 4) * 0.5s);
+    transform: translate(0, 0);
+
+    &:nth-child(#{$i}) {
+      animation: fall-#{$i} $fall-duration 2.5s ease 1;
+      transform: translateX(0px);
+    }
+
+    @keyframes fall-#{$i} {
+      0% {
+        transform: translateX(0);
+      }
+
+      50% {
+        transform: translateX($random-offset);
+      }
+    }
+  }
+}
+
+.cls-7 {
+  $total: 46;
+
+  @for $i from 1 through $total {
+    $random-x: random(1000000) * 0.0001px;
+    $random-offset: random_range(16, 20) * 1%;
+    $fall-duration: (random_range(1.5, 4) * 0.5s);
+    transform: translate(0, 0);
+
+    &:nth-child(#{$i}) {
+      animation: fall-#{$i} $fall-duration 3s ease 1;
+      transform: translateX(0px);
+    }
+
+    @keyframes fall-#{$i} {
+      0% {
+        transform: translateX(0);
+      }
+
+      50% {
+        transform: translateX($random-offset);
+      }
+    }
+  }
+}
+
+.cls-8 {
+  $total: 44;
+
+  @for $i from 1 through $total {
+    $random-x: random(1000000) * 0.0001px;
+    $random-offset: random_range(16, 20) * 1%;
+    $fall-duration: (random_range(1.5, 4) * 0.5s);
+    transform: translate(0, 0);
+
+    &:nth-child(#{$i}) {
+      animation: fall-#{$i} $fall-duration 3.5s ease 1;
+      transform: translateX(0px);
+    }
+
+    @keyframes fall-#{$i} {
+      0% {
+        transform: translateX(0);
+      }
+
+      50% {
+        transform: translateX($random-offset);
+      }
+    }
+  }
+}
+
+.cls-9 {
+  $total: 45;
+
+  @for $i from 1 through $total {
+    $random-x: random(1000000) * 0.0001px;
+    $random-offset: random_range(16, 20) * 1%;
+    $fall-duration: (random_range(1.5, 4) * 0.5s);
+    transform: translate(0, 0);
+
+    &:nth-child(#{$i}) {
+      animation: fall-#{$i} $fall-duration 4s ease 1;
+      transform: translateX(0px);
+    }
+
+    @keyframes fall-#{$i} {
+      0% {
+        transform: translateX(0);
+      }
+
+      50% {
+        transform: translateX($random-offset);
+      }
+    }
+  }
+}
+
+.cls-10 {
+  $total: 46;
+
+  @for $i from 1 through $total {
+    $random-x: random(1000000) * 0.0001px;
+    $random-offset: random_range(16, 20) * 1%;
+    $fall-duration: (random_range(1.5, 4) * 0.5s);
+    transform: translate(0, 0);
+
+    &:nth-child(#{$i}) {
+      animation: fall-#{$i} $fall-duration 4.5s ease 1;
+      transform: translateX(0px);
+    }
+
+    @keyframes fall-#{$i} {
+      0% {
+        transform: translateX(0);
+      }
+
+      50% {
+        transform: translateX($random-offset);
+      }
+    }
+  }
+}
